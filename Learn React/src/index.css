@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  width: 100vw;
+  background: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* center alignment row-wise */
+  gap: 20px; /* cards ke beech gap */
+  padding: 20px;
+  width: 100%; /* full width le sake */
+  box-sizing: border-box;
+}
+
+.child {
+  height: 350px;
+  width: 290px;
+  background-color: #222;
+  margin: 15px;
+  text-align: center;
+  padding: 22px 14px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.child:hover {
+  transform: translateY(-5px) scale(1.03);
+  background: #333;
+}
+
+.child img {
+  height: 90px;
+  width: 90px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.child h1 {
+  font-size: 28px;
+  font-weight: 600;
+  margin: 10px 0 8px 0;
+  padding: 0;
+}
+
+.child p {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.child button {
+  border: 2px solid white;
+  background-color: transparent;
+  border-radius: 5px;
+  color: white;
+  padding: 7px 18px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.child button:hover {
+  background: white;
+  color: #222;
+}
