@@ -7,7 +7,7 @@ import BottomRightSide from './BottomRightSide'
 
 const Section1 = () => {
   return (
-    <div className='w-full h-screen bg-white'>
+    <div className='w-full bg-white mb-0 min-h-screen border-b-4 rounded-b-4xl'>
       <Navbar />
       <Center />
       <BottomLeftSide />
