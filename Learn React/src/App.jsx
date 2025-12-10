@@ -3,8 +3,9 @@ import Card from './components/Card'
 
 const App = () => {
 
-const tenishTrainig = [
+const techField = [
   {
+    "id": 1,
     "image":"https://i.pinimg.com/736x/6f/a3/6a/6fa36aa2c367da06b2a4c8ae1cf9ee02.jpg",
     "age_group": "5-12 Years",
     "category": "For kids",
@@ -14,6 +15,7 @@ const tenishTrainig = [
     "button": { "text": "Read More", "icon": "arrow" }
   },
   {
+    "id": 2,
     "image":"https://i.pinimg.com/736x/a6/0e/06/a60e06ec8d6d558f4c3fd57d06227425.jpg",
     "age_group": "6-14 Years",
     "category": "For kids",
@@ -23,6 +25,7 @@ const tenishTrainig = [
     "button": { "text": "Read More", "icon": "arrow" }
   },
   {
+    "id": 3,
     "image":"https://i.pinimg.com/736x/d3/e5/39/d3e539067329b392e64c57c191066c1a.jpg",
     "age_group": "7-13 Years",
     "category": "For kids",
@@ -32,6 +35,7 @@ const tenishTrainig = [
     "button": { "text": "Read More", "icon": "arrow" }
   },
   {
+    "id": 4,
     "image":"https://i.pinimg.com/736x/cf/9e/52/cf9e525ffdd4e01b2b72ec4e9c03ce4b.jpg",
     "age_group": "5-12 Years",
     "category": "For kids",
@@ -41,6 +45,7 @@ const tenishTrainig = [
     "button": { "text": "Read More", "icon": "arrow" }
   },
   {
+    "id": 5,
     "image":"https://i.pinimg.com/736x/b2/27/7e/b2277e971a3178aea99ed3e999e14d33.jpg",
     "age_group": "6-13 Years",
     "category": "For kids",
@@ -50,6 +55,7 @@ const tenishTrainig = [
     "button": { "text": "Read More", "icon": "arrow" }
   },
   {
+    "id": 6,
     "image":"https://i.pinimg.com/736x/41/5b/08/415b087d5aaca334daa4b74ff935d8d8.jpg",
     "age_group": "7-12 Years",
     "category": "For kids",
@@ -59,6 +65,7 @@ const tenishTrainig = [
     "button": { "text": "Read More", "icon": "arrow" }
   },
   {
+    "id": 7,
     "image":"https://i.pinimg.com/736x/13/0d/6d/130d6d211ab3497c47df5b867b839ca7.jpg",
     "age_group": "5-12 Years",
     "category": "For kids",
@@ -68,6 +75,7 @@ const tenishTrainig = [
     "button": { "text": "Read More", "icon": "arrow" }
   },
   {
+    "id": 8,
     "image":"https://i.pinimg.com/736x/15/ae/d2/15aed2b1d904c637f3653f47c4cf108e.jpg",
     "age_group": "8-12 Years",
     "category": "For kids",
@@ -77,6 +85,7 @@ const tenishTrainig = [
     "button": { "text": "Read More", "icon": "arrow" }
   },
   {
+    "id": 9,
     "image":"https://i.pinimg.com/736x/4e/69/eb/4e69ebda60b0c50d3e44a2dee71c0915.jpg",
     "age_group": "6-14 Years",
     "category": "For kids",
@@ -86,6 +95,7 @@ const tenishTrainig = [
     "button": { "text": "Read More", "icon": "arrow" }
   },
   {
+    "id": 10,
     "image":"https://i.pinimg.com/736x/13/db/2f/13db2fcae2d50a67e2d5363fc52742c7.jpg",
     "age_group": "5-12 Years",
     "category": "For kids",
@@ -98,14 +108,23 @@ const tenishTrainig = [
 
   return (
     <div className='card-container'>
-      {tenishTrainig.map(function(elem, idx){
-        return (
-          <div key={idx}>
-            <Card Images={elem.image} Age={elem.age_group} Catagory={elem.category} Title1={elem.title1} title2={elem.title2} Description={elem.description} Button={elem.button} />
-          </div>
-        )
-      })}
-    </div>
+  {techField.map(function(elem,idx){
+    return (
+      <div key={idx}>
+      <Card
+        cardId={elem.id}
+        Images={elem.image}
+        Age={elem.age_group}
+        Catagory={elem.category}
+        Title1={elem.title1}
+        title2={elem.title2}
+        Description={elem.description}
+        Button={elem.button}
+      />
+      </div>
+    )
+  })}
+</div>
   )
 }
 

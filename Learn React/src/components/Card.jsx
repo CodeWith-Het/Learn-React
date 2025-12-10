@@ -3,6 +3,9 @@ import { Volleyball } from "lucide-react";
 import { MoveRight } from "lucide-react";
 
 const Card = (props) => {
+
+  console.log(props.cardId);
+
   return (
     <div className="card">
       <div className="top">
