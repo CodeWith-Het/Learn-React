@@ -1,2 +1,8 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# Dependencies (ye bohot heavy hoti hain, upload nahi karte)
+node_modules/
+
+# Environment variables (isme teri API Key hai, isko chupana jaruri hai)
+.env
+
+# Mac/Windows system files (optional but good practice)
+.DS_Store
